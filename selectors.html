@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Awesome Product Ad</title>
+<style>
+p::first-letter {
+font-size:20px;
+}
+p{
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+h1, h2, footer p {
+    text-align: center;
+    color: #004085;
+}
+.new-badge {
+    background-color: #ff4136;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+#cta-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+#cta-button:hover {
+    background-color: #218838;
+}
+.interactive-box {
+    width: 200px;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid #007bff;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.interactive-box:hover, .interactive-box:focus {
+    background-color: #007bff;
+    color: white;
+    outline: none; /* Removes default focus outline */
+}
+
+.interactive-box::before
+    content: "⭐ "; /* Inserts content before the element's actual content */
+    font-size: 1.2em;
+}
+.interactive-box::after {
+    content: " !"; /* Inserts content after the element's actual content */
+    font-size: 1.2em;
+}
+
+
+#ad-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #e9ecef;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>SuperSale Today!</h1>
+    </header>
+
+    <div id="ad-container">
+        <p>Experience the future with our new gadget.</p>
+        
+        <div class="product-info">
+            <span class="new-badge">New</span>
+            <h2>The MegaGadget X1</h2>
+            <p>Limited time offer. Don't miss out!</p>
+        </div>
+        <a href="#" id="cta-button">Buy Now</a>
+        <div class="interactive-box" tabindex="0">
+            Hover or Focus on me!
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact Us | Privacy Policy</p>
+    </footer>
+
+</body>
+</html>
